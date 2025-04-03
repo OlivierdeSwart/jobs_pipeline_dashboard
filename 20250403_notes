@@ -25,7 +25,22 @@ Another reason for SCD (not sure if that could be through flat file still or nee
 Start understanding the general outline of your dataset - postman / Python
 Postman: - Total rows, rows per day, etc
 
+Build a historical dataset - exploratory DA
+- Time considerations of the set
+	- the api says it's 24 hours delayed
+	- I'm in 3 april 2025 13:31 Paraguay time (utc-3) and the max timestamp of the dataset is 2025-04-02 08:51:41
+	- this presumably shows that they don't upload full days by chunk, but some other system
+	- to make this process clean, for now, let's take a daily dataset for full date of today - 2 days. So if we run today's DAG we'll get all entries for 2025-04-01. We'll be a bit delayed with data on our dashboard, but since timelyness is not very important here for real time decision making, that's a tradeoff I'll accept
 
+	DAG: run at 6 utc -3 every morning. So that's 9 AM utc. I chose this time because my 13:31 Paraguay time (utc-3) - max timestamp of dataset 08:51:41 is about that time. This makes sure the dataset for full days remains intact and i won't cut off data. This is an assumption of course, and for a sensitive dataset this should be tested!
+
+	! Document VERY well all things time related. I will name the folders after the contents of the data. So if i create a folder on 3 april, the folder name and contents will be that of 1 april. No april fools there :) Later in STA and in Airflow, it will become clear that the run of the script to ETL will actually be on 3 april
+
+	•	✅ Clean folder structure by data date
+	•	✅ Daily and historical splits handled
+	•	✅ CSV + JSON formats for flexibility
+	•	✅ Re-runnable scripts that overwrite intelligently
+	•	✅ Timezone-lag-aware logic built in (today - 2 / today - 3)
 
 --------------
 Benchmark ideas:
