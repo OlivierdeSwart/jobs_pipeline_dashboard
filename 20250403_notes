@@ -1,0 +1,44 @@
+20250403_notes
+
+Blog concept: how to create a developer portfolio project
+
+Think which skill(s) you want to showcase (DE)
+Think of general idea (dashboard with job trends)
+Think of tech stack, bonus points for review with AI (Airflow with Python, Snowflake DB, DBT, Tableau for dashboard)
+	Also helpful to discuss repo/folder setup
+Other things you want to showcase (star schema data modeling, STA/DWH/DM)
+Take note of the questions you have along the way. Or you think other people might have
+It's great if you can explain the "why" of what you're doing. (for me: performance and storage will be decreased. that's large amounts of money saved for data intensive companies. that's why data engineers have the right to exist in essence)
+
+Start working. For me:
+Find API with data: Remotive
+
+https://remotive.io/api/remote-jobs
+
+Found: one big table
+Question came up: why pull this table apart to build it up later? --> benchmark idea. flat vs normalized. Storage, performance, complexity of querying
+
+Insight: most companies don't put their data on a digestible API for open consumption. Often it's for integrating functinality, not for analytics workloads
+
+Another reason for SCD (not sure if that could be through flat file still or needs normalization): the api only gives current job postings, no history. Often happens in the real world, if you want to do a historical analysis you will need the historical data. Most reliable is to keep track of that historical data yourself.
+
+Start understanding the general outline of your dataset - postman / Python
+Postman: - Total rows, rows per day, etc
+
+
+
+--------------
+Benchmark ideas:
+
+	•	Show performance differences in query structure
+	•	Measure execution times between flat vs star
+	•	Demonstrate storage impacts
+	•	Compare ease of querying
+
+🔹 Join Complexity Still Matters
+
+You can benchmark:
+	•	How many joins are needed
+	•	Query readability and maintainability
+	•	Performance of LIKE vs bridging tables for tags
+	•	Whether GROUP BY performance changes on normalized vs flat models
