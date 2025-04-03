@@ -500,3 +500,506 @@
 [2025-04-03T18:57:27.096+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:57:27.096+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
 [2025-04-03T18:57:27.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.149 seconds
 [2025-04-03T18:57:57.712+0000] {processor.py:161} INFO - Started process (PID=1844) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:57:57.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T18:57:57.750+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:57:57.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:57:57.772+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:57:57.805+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:57:57.805+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T18:57:57.837+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:57:57.837+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T18:57:57.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.161 seconds
+[2025-04-03T18:58:27.952+0000] {processor.py:161} INFO - Started process (PID=1900) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:58:27.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T18:58:27.963+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:58:27.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:58:27.986+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:58:28.022+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:58:28.022+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T18:58:28.044+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:58:28.044+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T18:58:28.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.117 seconds
+[2025-04-03T18:58:58.122+0000] {processor.py:161} INFO - Started process (PID=1956) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:58:58.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T18:58:58.130+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:58:58.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:58:58.147+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:58:58.171+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:58:58.171+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T18:58:58.384+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:58:58.384+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T18:58:58.398+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.286 seconds
+[2025-04-03T18:59:28.794+0000] {processor.py:161} INFO - Started process (PID=2012) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:59:28.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T18:59:28.805+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:59:28.804+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:59:28.822+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:59:28.847+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:59:28.847+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T18:59:28.867+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:59:28.867+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T18:59:29.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.256 seconds
+[2025-04-03T18:59:59.271+0000] {processor.py:161} INFO - Started process (PID=2068) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:59:59.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T18:59:59.281+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:59:59.280+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:59:59.297+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T18:59:59.321+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:59:59.321+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T18:59:59.344+0000] {logging_mixin.py:188} INFO - [2025-04-03T18:59:59.344+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T18:59:59.361+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.096 seconds
+[2025-04-03T19:00:29.446+0000] {processor.py:161} INFO - Started process (PID=2124) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:00:29.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:00:29.454+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:00:29.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:00:29.471+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:00:29.492+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:00:29.492+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:00:29.506+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:00:29.506+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:00:29.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.081 seconds
+[2025-04-03T19:01:00.063+0000] {processor.py:161} INFO - Started process (PID=2180) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:01:00.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:01:00.074+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:01:00.074+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:01:00.095+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:01:00.128+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:01:00.128+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:01:00.149+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:01:00.148+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:01:00.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.118 seconds
+[2025-04-03T19:01:30.750+0000] {processor.py:161} INFO - Started process (PID=2236) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:01:30.752+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:01:30.769+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:01:30.768+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:01:30.790+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:01:30.820+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:01:30.820+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:01:30.846+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:01:30.846+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:01:30.883+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.146 seconds
+[2025-04-03T19:02:01.194+0000] {processor.py:161} INFO - Started process (PID=2292) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:02:01.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:02:01.206+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:02:01.205+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:02:01.238+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:02:01.288+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:02:01.288+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:02:01.313+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:02:01.313+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:02:01.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.146 seconds
+[2025-04-03T19:02:31.540+0000] {processor.py:161} INFO - Started process (PID=2348) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:02:31.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:02:31.550+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:02:31.550+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:02:31.574+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:02:31.608+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:02:31.608+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:02:31.632+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:02:31.632+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:02:31.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.112 seconds
+[2025-04-03T19:03:02.175+0000] {processor.py:161} INFO - Started process (PID=2404) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:03:02.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:03:02.182+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:03:02.182+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:03:02.205+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:03:02.245+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:03:02.245+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:03:02.264+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:03:02.264+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:03:02.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.116 seconds
+[2025-04-03T19:03:32.948+0000] {processor.py:161} INFO - Started process (PID=2460) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:03:32.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:03:32.956+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:03:32.955+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:03:32.970+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:03:33.002+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:03:33.002+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:03:33.023+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:03:33.023+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:03:33.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.095 seconds
+[2025-04-03T19:04:03.759+0000] {processor.py:161} INFO - Started process (PID=2516) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:04:03.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:04:03.778+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:04:03.777+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:04:03.824+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:04:03.863+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:04:03.863+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:04:03.895+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:04:03.895+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:04:03.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.173 seconds
+[2025-04-03T19:04:34.181+0000] {processor.py:161} INFO - Started process (PID=2572) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:04:34.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:04:34.190+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:04:34.189+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:04:34.218+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:04:34.248+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:04:34.247+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:04:34.273+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:04:34.273+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:04:34.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.144 seconds
+[2025-04-03T19:05:05.148+0000] {processor.py:161} INFO - Started process (PID=2628) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:05:05.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:05:05.162+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:05:05.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:05:05.182+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:05:05.249+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:05:05.249+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:05:05.276+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:05:05.276+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:05:05.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.156 seconds
+[2025-04-03T19:05:36.194+0000] {processor.py:161} INFO - Started process (PID=2684) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:05:36.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:05:36.198+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:05:36.198+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:05:36.211+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:05:36.237+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:05:36.236+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:05:36.257+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:05:36.257+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:05:36.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.080 seconds
+[2025-04-03T19:06:06.873+0000] {processor.py:161} INFO - Started process (PID=2740) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:06:06.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:06:06.876+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:06:06.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:06:06.888+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:06:06.912+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:06:06.912+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:06:06.940+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:06:06.939+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:06:06.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.096 seconds
+[2025-04-03T19:06:37.327+0000] {processor.py:161} INFO - Started process (PID=2796) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:06:37.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:06:37.333+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:06:37.332+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:06:37.353+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:06:37.391+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:06:37.390+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:06:37.417+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:06:37.417+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:06:37.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.124 seconds
+[2025-04-03T19:07:07.905+0000] {processor.py:161} INFO - Started process (PID=2852) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:07:07.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:07:07.930+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:07:07.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:07:07.966+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:07:08.023+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:07:08.023+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:07:08.065+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:07:08.065+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:07:08.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.222 seconds
+[2025-04-03T19:07:38.371+0000] {processor.py:161} INFO - Started process (PID=2908) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:07:38.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:07:38.380+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:07:38.380+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:07:38.393+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:07:38.423+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:07:38.423+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:07:38.452+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:07:38.452+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:07:38.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.108 seconds
+[2025-04-03T19:08:08.895+0000] {processor.py:161} INFO - Started process (PID=2962) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:08:08.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:08:08.913+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:08:08.913+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:08:08.938+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:08:08.970+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:08:08.970+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:08:08.990+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:08:08.990+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:08:09.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.134 seconds
+[2025-04-03T19:08:39.592+0000] {processor.py:161} INFO - Started process (PID=3018) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:08:39.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:08:39.606+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:08:39.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:08:39.619+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:08:39.652+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:08:39.652+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:08:39.731+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:08:39.730+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:08:39.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.208 seconds
+[2025-04-03T19:09:10.388+0000] {processor.py:161} INFO - Started process (PID=3074) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:09:10.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:09:10.396+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:09:10.395+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:09:10.411+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:09:10.436+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:09:10.436+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:09:10.453+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:09:10.452+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:09:10.465+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.087 seconds
+[2025-04-03T19:09:41.315+0000] {processor.py:161} INFO - Started process (PID=3130) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:09:41.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:09:41.328+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:09:41.328+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:09:41.356+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:09:41.402+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:09:41.401+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:09:41.430+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:09:41.430+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:09:41.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.165 seconds
+[2025-04-03T19:10:12.549+0000] {processor.py:161} INFO - Started process (PID=3186) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:10:12.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:10:12.564+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:10:12.563+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:10:12.594+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:10:12.628+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:10:12.627+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:10:12.650+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:10:12.650+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:10:12.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.125 seconds
+[2025-04-03T19:10:42.923+0000] {processor.py:161} INFO - Started process (PID=3243) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:10:42.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:10:42.927+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:10:42.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:10:42.944+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:10:42.962+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:10:42.962+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:10:42.978+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:10:42.978+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:10:42.992+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.071 seconds
+[2025-04-03T19:11:13.127+0000] {processor.py:161} INFO - Started process (PID=3299) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:11:13.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:11:13.130+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:11:13.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:11:13.143+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:11:13.159+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:11:13.159+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:11:13.172+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:11:13.172+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:11:13.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.063 seconds
+[2025-04-03T19:11:44.092+0000] {processor.py:161} INFO - Started process (PID=3354) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:11:44.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:11:44.100+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:11:44.099+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:11:44.129+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:11:44.153+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:11:44.153+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:11:44.177+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:11:44.177+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:11:44.194+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.111 seconds
+[2025-04-03T19:12:15.085+0000] {processor.py:161} INFO - Started process (PID=3410) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:12:15.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:12:15.094+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:12:15.094+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:12:15.106+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:12:15.150+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:12:15.150+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:12:15.174+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:12:15.173+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:12:15.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.115 seconds
+[2025-04-03T19:12:45.591+0000] {processor.py:161} INFO - Started process (PID=3466) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:12:45.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:12:45.604+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:12:45.604+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:12:45.622+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:12:45.668+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:12:45.668+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:12:45.706+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:12:45.706+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:12:45.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.148 seconds
+[2025-04-03T19:13:16.661+0000] {processor.py:161} INFO - Started process (PID=3522) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:13:16.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:13:16.674+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:13:16.673+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:13:16.691+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:13:16.723+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:13:16.723+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:13:16.747+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:13:16.747+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:13:16.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.114 seconds
+[2025-04-03T19:13:47.751+0000] {processor.py:161} INFO - Started process (PID=3578) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:13:47.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:13:47.759+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:13:47.759+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:13:47.779+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:13:47.819+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:13:47.819+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:13:47.851+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:13:47.851+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:13:47.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.133 seconds
+[2025-04-03T19:14:18.297+0000] {processor.py:161} INFO - Started process (PID=3634) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:14:18.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:14:18.310+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:14:18.308+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:14:18.327+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:14:18.367+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:14:18.367+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:14:18.393+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:14:18.393+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:14:18.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.126 seconds
+[2025-04-03T19:14:49.323+0000] {processor.py:161} INFO - Started process (PID=3696) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:14:49.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:14:49.346+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:14:49.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:14:49.365+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:14:49.452+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:14:49.451+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:14:49.526+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:14:49.525+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:14:49.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.253 seconds
+[2025-04-03T19:15:20.399+0000] {processor.py:161} INFO - Started process (PID=3752) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:15:20.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:15:20.408+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:15:20.407+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:15:20.430+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:15:20.472+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:15:20.471+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:15:20.496+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:15:20.496+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:15:20.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.126 seconds
+[2025-04-03T19:15:50.881+0000] {processor.py:161} INFO - Started process (PID=3807) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:15:50.882+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:15:50.891+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:15:50.890+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:15:50.920+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:15:50.956+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:15:50.956+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:15:50.980+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:15:50.980+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:15:50.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.128 seconds
+[2025-04-03T19:16:21.209+0000] {processor.py:161} INFO - Started process (PID=3863) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:16:21.213+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:16:21.217+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:16:21.217+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:16:21.234+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:16:21.264+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:16:21.264+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:16:21.287+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:16:21.287+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:16:21.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.109 seconds
+[2025-04-03T19:16:51.600+0000] {processor.py:161} INFO - Started process (PID=3919) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:16:51.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:16:51.604+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:16:51.604+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:16:51.629+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:16:51.666+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:16:51.666+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:16:51.690+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:16:51.690+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:16:51.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.125 seconds
+[2025-04-03T19:17:22.111+0000] {processor.py:161} INFO - Started process (PID=3975) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:17:22.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:17:22.119+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:17:22.118+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:17:22.148+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:17:22.184+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:17:22.184+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:17:22.215+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:17:22.215+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:17:22.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.135 seconds
+[2025-04-03T19:17:53.141+0000] {processor.py:161} INFO - Started process (PID=4031) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:17:53.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:17:53.149+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:17:53.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:17:53.166+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:17:53.246+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:17:53.246+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:17:53.286+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:17:53.286+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:17:53.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.182 seconds
+[2025-04-03T19:18:24.144+0000] {processor.py:161} INFO - Started process (PID=4087) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:18:24.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:18:24.158+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:18:24.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:18:24.178+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:18:24.226+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:18:24.226+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:18:24.258+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:18:24.258+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:18:24.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.149 seconds
+[2025-04-03T19:18:54.895+0000] {processor.py:161} INFO - Started process (PID=4143) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:18:54.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:18:54.905+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:18:54.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:18:54.924+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:18:54.962+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:18:54.961+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:18:54.987+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:18:54.987+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:18:55.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.139 seconds
+[2025-04-03T19:19:25.501+0000] {processor.py:161} INFO - Started process (PID=4199) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:19:25.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:19:25.516+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:19:25.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:19:25.529+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:19:25.570+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:19:25.570+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:19:25.598+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:19:25.598+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:19:25.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.122 seconds
+[2025-04-03T19:19:56.205+0000] {processor.py:161} INFO - Started process (PID=4255) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:19:56.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:19:56.217+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:19:56.217+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:19:56.278+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:19:56.347+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:19:56.347+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:19:56.381+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:19:56.381+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:19:56.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.215 seconds
+[2025-04-03T19:20:27.342+0000] {processor.py:161} INFO - Started process (PID=4311) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:20:27.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:20:27.348+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:20:27.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:20:27.362+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:20:27.413+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:20:27.412+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:20:27.453+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:20:27.453+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:20:27.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.157 seconds
+[2025-04-03T19:20:58.184+0000] {processor.py:161} INFO - Started process (PID=4367) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:20:58.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:20:58.190+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:20:58.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:20:58.205+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:20:58.261+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:20:58.260+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:20:58.320+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:20:58.319+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:20:58.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.191 seconds
+[2025-04-03T19:21:29.105+0000] {processor.py:161} INFO - Started process (PID=4423) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:21:29.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:21:29.121+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:21:29.120+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:21:29.146+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:21:29.190+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:21:29.190+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:21:29.220+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:21:29.220+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:21:29.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.153 seconds
+[2025-04-03T19:21:59.877+0000] {processor.py:161} INFO - Started process (PID=4479) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:21:59.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:21:59.890+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:21:59.889+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:21:59.909+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:21:59.943+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:21:59.942+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:21:59.963+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:21:59.962+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:21:59.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.116 seconds
+[2025-04-03T19:22:30.272+0000] {processor.py:161} INFO - Started process (PID=4535) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:22:30.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:22:30.277+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:22:30.276+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:22:30.290+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:22:30.315+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:22:30.315+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:22:30.334+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:22:30.334+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:22:30.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.080 seconds
+[2025-04-03T19:23:00.503+0000] {processor.py:161} INFO - Started process (PID=4591) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:23:00.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:23:00.508+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:23:00.508+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:23:00.521+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:23:00.586+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:23:00.585+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:23:00.616+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:23:00.616+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:23:00.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.138 seconds
+[2025-04-03T19:23:31.266+0000] {processor.py:161} INFO - Started process (PID=4647) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:23:31.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:23:31.272+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:23:31.272+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:23:31.285+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:23:31.314+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:23:31.314+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:23:31.340+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:23:31.339+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:23:31.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.110 seconds
+[2025-04-03T19:24:02.121+0000] {processor.py:161} INFO - Started process (PID=4703) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:24:02.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:24:02.145+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:24:02.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:24:02.176+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:24:02.231+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:24:02.231+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:24:02.258+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:24:02.258+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:24:02.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.191 seconds
+[2025-04-03T19:24:32.951+0000] {processor.py:161} INFO - Started process (PID=4759) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:24:32.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:24:32.957+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:24:32.956+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:24:32.974+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:24:33.028+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:24:33.027+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:24:33.067+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:24:33.066+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:24:33.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.150 seconds
+[2025-04-03T19:25:03.678+0000] {processor.py:161} INFO - Started process (PID=4815) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:25:03.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:25:03.685+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:25:03.684+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:25:03.703+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:25:03.745+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:25:03.745+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:25:03.774+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:25:03.773+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:25:03.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.134 seconds
+[2025-04-03T19:25:34.687+0000] {processor.py:161} INFO - Started process (PID=4871) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:25:34.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:25:34.695+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:25:34.695+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:25:34.706+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:25:34.762+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:25:34.762+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:25:34.785+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:25:34.785+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:25:34.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.122 seconds
+[2025-04-03T19:26:05.443+0000] {processor.py:161} INFO - Started process (PID=4927) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:26:05.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:26:05.449+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:26:05.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:26:05.473+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:26:05.504+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:26:05.504+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:26:05.535+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:26:05.535+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:26:05.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.124 seconds
+[2025-04-03T19:26:35.732+0000] {processor.py:161} INFO - Started process (PID=4983) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:26:35.734+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:26:35.741+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:26:35.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:26:35.758+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:26:35.790+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:26:35.790+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:26:35.815+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:26:35.814+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:26:35.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.115 seconds
+[2025-04-03T19:27:06.061+0000] {processor.py:161} INFO - Started process (PID=5039) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:27:06.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:27:06.067+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:27:06.066+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:27:06.090+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:27:06.122+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:27:06.122+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:27:06.137+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:27:06.136+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:27:06.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.105 seconds
+[2025-04-03T19:27:36.276+0000] {processor.py:161} INFO - Started process (PID=5095) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:27:36.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:27:36.295+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:27:36.293+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:27:36.320+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:27:36.357+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:27:36.356+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:27:36.389+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:27:36.388+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:27:36.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.144 seconds
+[2025-04-03T19:28:06.903+0000] {processor.py:161} INFO - Started process (PID=5151) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:28:06.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:28:06.915+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:28:06.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:28:06.931+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:28:06.977+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:28:06.976+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:28:07.007+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:28:07.007+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:28:07.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.140 seconds
+[2025-04-03T19:28:37.570+0000] {processor.py:161} INFO - Started process (PID=5207) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:28:37.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:28:37.582+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:28:37.581+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:28:37.603+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:28:37.626+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:28:37.626+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:28:37.651+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:28:37.651+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:28:37.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.105 seconds
+[2025-04-03T19:29:08.039+0000] {processor.py:161} INFO - Started process (PID=5263) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:29:08.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:29:08.050+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:29:08.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:29:08.069+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:29:08.104+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:29:08.104+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:29:08.128+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:29:08.128+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:29:08.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.115 seconds
+[2025-04-03T19:29:38.715+0000] {processor.py:161} INFO - Started process (PID=5319) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:29:38.718+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:29:38.722+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:29:38.721+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:29:38.735+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:29:38.758+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:29:38.758+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:29:38.783+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:29:38.783+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:29:38.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.101 seconds
+[2025-04-03T19:30:09.109+0000] {processor.py:161} INFO - Started process (PID=5375) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:30:09.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:30:09.118+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:30:09.118+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:30:09.131+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:30:09.157+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:30:09.157+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:30:09.181+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:30:09.181+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:30:09.201+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.100 seconds
+[2025-04-03T19:30:39.311+0000] {processor.py:161} INFO - Started process (PID=5431) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:30:39.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:30:39.320+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:30:39.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:30:39.336+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:30:39.377+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:30:39.377+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:30:39.409+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:30:39.409+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:30:39.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.130 seconds
+[2025-04-03T19:31:09.936+0000] {processor.py:161} INFO - Started process (PID=5487) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:31:09.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:31:09.945+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:31:09.945+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:31:09.960+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:31:10.012+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:31:10.012+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:31:10.039+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:31:10.039+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:31:10.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.127 seconds
+[2025-04-03T19:31:40.348+0000] {processor.py:161} INFO - Started process (PID=5543) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:31:40.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:31:40.357+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:31:40.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:31:40.373+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:31:40.395+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:31:40.395+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:31:40.417+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:31:40.417+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:31:40.438+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.102 seconds
+[2025-04-03T19:32:10.652+0000] {processor.py:161} INFO - Started process (PID=5599) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:32:10.654+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:32:10.662+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:32:10.662+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:32:10.683+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:32:10.713+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:32:10.713+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:32:10.744+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:32:10.743+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:32:10.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.124 seconds
+[2025-04-03T19:32:41.172+0000] {processor.py:161} INFO - Started process (PID=5655) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:32:41.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:32:41.187+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:32:41.186+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:32:41.212+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:32:41.254+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:32:41.254+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:32:41.290+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:32:41.290+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:32:41.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.156 seconds
+[2025-04-03T19:33:12.414+0000] {processor.py:161} INFO - Started process (PID=5711) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:33:12.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:33:12.458+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:33:12.455+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:33:12.508+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:33:12.573+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:33:12.573+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:33:12.657+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:33:12.657+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:33:12.747+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.370 seconds
+[2025-04-03T19:33:43.435+0000] {processor.py:161} INFO - Started process (PID=5767) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:33:43.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:33:43.493+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:33:43.487+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:33:43.648+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:33:43.798+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:33:43.798+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:33:43.888+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:33:43.888+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:33:43.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.596 seconds
+[2025-04-03T19:34:14.142+0000] {processor.py:161} INFO - Started process (PID=5823) to work on /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:34:14.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_remotive_ingest.py for tasks to queue
+[2025-04-03T19:34:14.154+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:34:14.153+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:34:14.176+0000] {processor.py:840} INFO - DAG(s) 'daily_remotive_ingest' retrieved from /opt/airflow/dags/daily_remotive_ingest.py
+[2025-04-03T19:34:14.245+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:34:14.245+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-04-03T19:34:14.287+0000] {logging_mixin.py:188} INFO - [2025-04-03T19:34:14.287+0000] {dag.py:3820} INFO - Setting next_dagrun for daily_remotive_ingest to 2025-04-03T09:00:00+00:00, run_after=2025-04-04T09:00:00+00:00
+[2025-04-03T19:34:14.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_remotive_ingest.py took 0.211 seconds
