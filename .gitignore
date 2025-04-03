@@ -13,3 +13,4 @@ __pycache__/
 
 airflow/logs/
 logs/
+logs/dbt.log
