@@ -15,7 +15,7 @@ with DAG(
     dag_id='daily_remotive_ingest',
     default_args=default_args,
     description='Daily job ingest from Remotive API (2-day delay strategy)',
-    schedule_interval='0 9 * * *',
+    schedule_interval='0 15 * * *',
     start_date=datetime(2025, 4, 3),
     catchup=False,
     tags=['remotive', 'jobs', 'api', 'ingest']
