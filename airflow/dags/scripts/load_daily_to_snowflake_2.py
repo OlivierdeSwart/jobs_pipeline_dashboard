@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 
 # Load environment variables
-load_dotenv()
+load_dotenv(dotenv_path="/opt/airflow/.env")
+
+print("👀 SF User:", os.getenv("SNOWFLAKE_USER"))
 
 # Connect to Snowflake
 ctx = connector.connect(
@@ -17,8 +19,8 @@ ctx = connector.connect(
     warehouse=os.getenv('SNOWFLAKE_WAREHOUSE'),
     database=os.getenv('SNOWFLAKE_DATABASE'),
     schema=os.getenv('SNOWFLAKE_SCHEMA'),
-    enable_connection_diag=True,
-    connection_diag_log_path="<HOME>/diag-tests",
+    # enable_connection_diag=True,
+    # connection_diag_log_path="<HOME>/diag-tests",
 )
 print('✅ Connected to Snowflake')
 
@@ -69,7 +71,8 @@ def load_json_to_variant(json_path, source_date):
 
 if __name__ == "__main__":
     two_days_ago = (datetime.today() - timedelta(days=2)).strftime("%Y-%m-%d")
-    folder = f"data_storage/remotive_job_api/{two_days_ago}"
+    # folder = f"data_storage/remotive_job_api/{two_days_ago}"
+    folder = f"/opt/airflow/data_storage/remotive_job_api/{two_days_ago}"
     # folder = "data_storage/remotive_job_api/2025-04-02"
     json_path = os.path.join(folder, "daily.json")
     source_date = Path(folder).name  # "2025-04-01"

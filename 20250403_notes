@@ -42,6 +42,11 @@ Build a historical dataset - exploratory DA
 	•	✅ Re-runnable scripts that overwrite intelligently
 	•	✅ Timezone-lag-aware logic built in (today - 2 / today - 3)
 
+https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+Got docker running with Airflow, the DAG running the API script, writing the data both as json and csv to my files
+
+Snowflake python connector
+
 --------------
 Benchmark ideas:
 
@@ -57,3 +62,33 @@ You can benchmark:
 	•	Query readability and maintainability
 	•	Performance of LIKE vs bridging tables for tags
 	•	Whether GROUP BY performance changes on normalized vs flat models
+
+-------------------
+
+why hire data engineer?
+- Set up pipelines for automatic data processing, to ingest data, combine different sources properly, increase data quality
+- ETL?
+- You want to increase your data process performance
+- You want to decrease cost
+- Historical data & changes are important to your business. And you want to make sure there's a robust system in place for that
+
+---------------------
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm use default
+
+export PATH="/Users/olivierdeswart/.nvm/versions/node/v20.17.0/bin:$PATH"
+
+export COMPACT_HOME="/Users/olivierdeswart/my-binaries/compactc-macos"
+export COMPACT_PATH="$COMPACT_HOME/lib/"
+export ZKIR_PP="$COMPACT_HOME"
+
+# pnpm
+export PNPM_HOME="/Users/olivierdeswart/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
