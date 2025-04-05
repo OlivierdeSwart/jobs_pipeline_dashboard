@@ -74,3 +74,4 @@ if __name__ == "__main__":
     json_path = os.path.join(folder, "daily.json")
     source_date = Path(folder).name  # "2025-04-01"
     load_json_to_variant(json_path, source_date)
+    
