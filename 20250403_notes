@@ -92,3 +92,62 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+
+
+[WARNING]: Console output during zsh initialization detected.
+
+When using Powerlevel10k with instant prompt, console output during zsh
+initialization may indicate issues.
+
+You can:
+
+  - Recommended: Change ~/.zshrc so that it does not perform console I/O
+    after the instant prompt preamble. See the link below for details.
+
+    * You will not see this error message again.
+    * Zsh will start quickly and prompt will update smoothly.
+
+  - Suppress this warning either by running p10k configure or by manually
+    defining the following parameter:
+
+      typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+    * You will not see this error message again.
+    * Zsh will start quickly but prompt will jump down after initialization.
+
+  - Disable instant prompt either by running p10k configure or by manually
+    defining the following parameter:
+
+      typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+    * You will not see this error message again.
+    * Zsh will start slowly.
+
+  - Do nothing.
+
+    * You will see this error message every time you start zsh.
+    * Zsh will start quickly but prompt will jump down after initialization.
+
+For details, see:
+https://github.com/romkatv/powerlevel10k#instant-prompt
+
+-- console output produced during zsh initialization follows --
+
+Now using node v20.17.0 (npm v10.8.2)
+
+
+-------------
+api research
+
+https://github.com/public-apis/public-apis?tab=readme-ov-file
+
+usa
+data.gov
+usaspending.gov
+
+eu
+
+
+tenders
+https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EIC-2025-PATHFINDERCHALLENGES-01-02?isExactMatch=true&status=31094501,31094502,31094503&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate

@@ -1,10 +1,9 @@
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from snowflake import connector
 from dotenv import load_dotenv
-from datetime import datetime, timedelta
 
 # Load environment variables
 load_dotenv(dotenv_path="/opt/airflow/.env")
@@ -19,46 +18,37 @@ ctx = connector.connect(
     warehouse=os.getenv('SNOWFLAKE_WAREHOUSE'),
     database=os.getenv('SNOWFLAKE_DATABASE'),
     schema=os.getenv('SNOWFLAKE_SCHEMA'),
-    # enable_connection_diag=True,
-    # connection_diag_log_path="<HOME>/diag-tests",
 )
+
 print('✅ Connected to Snowflake')
 
-
-def load_json_to_variant(json_path, source_date):
+def load_json_to_variant(json_path):
     cs = ctx.cursor()
 
     try:
-        # Create table (use UPPERCASE for identifiers)
+        # Create or replace the table (refreshes daily)
         cs.execute("""
-            CREATE TABLE IF NOT EXISTS JOBS.STA.JOBS_RAW (
-                ID INTEGER AUTOINCREMENT PRIMARY KEY,
-                INGESTED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                SOURCE_DATE DATE,
-                RAW_DATA VARIANT
+            CREATE OR REPLACE TABLE JOBS.STA.JOBS_RAW (
+                RAW_DATA VARIANT,
+                META_INGESTED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                META_SOURCE_NAME STRING DEFAULT 'REMOTIVE_JOB_API'
             )
         """)
 
         # Load JSON
         with open(json_path) as f:
             jobs = json.load(f)
-            print("✅ Loaded JSON file into local variable")
-            # print("🔍 First item preview:", json.dumps(jobs[0], indent=2) if jobs else "No data loaded")
+            print(f"✅ Loaded {len(jobs)} jobs from JSON")
 
-        for job in jobs[:3]:  # Just show first 3 to avoid flooding
-            json_string = json.dumps(job)
-            # print("🔢 Inserting:", {"source_date": source_date, "json": json_string[:80] + "..."})
-
-        # Insert each job
         insert_sql = """
-            INSERT INTO JOBS.STA.JOBS_RAW (SOURCE_DATE, RAW_DATA)
-            SELECT %s, PARSE_JSON(%s)
+            INSERT INTO JOBS.STA.JOBS_RAW (RAW_DATA)
+            SELECT PARSE_JSON(%s)
         """
 
         for job in jobs:
-            cs.execute(insert_sql, (source_date, json.dumps(job)))
+            cs.execute(insert_sql, (json.dumps(job),))
 
-        print(f"✅ Inserted {len(jobs)} jobs for {source_date}")
+        print(f"✅ Inserted {len(jobs)} jobs into JOBS.STA.JOBS_RAW")
 
     except Exception as e:
         print("❌ Error loading data:", e)
@@ -71,10 +61,6 @@ def load_json_to_variant(json_path, source_date):
 
 if __name__ == "__main__":
     two_days_ago = (datetime.today() - timedelta(days=2)).strftime("%Y-%m-%d")
-    # folder = f"data_storage/remotive_job_api/{two_days_ago}"
     folder = f"/opt/airflow/data_storage/remotive_job_api/{two_days_ago}"
-    # folder = "data_storage/remotive_job_api/2025-04-02"
     json_path = os.path.join(folder, "daily.json")
-    source_date = Path(folder).name  # "2025-04-01"
-    load_json_to_variant(json_path, source_date)
-    
+    load_json_to_variant(json_path)
