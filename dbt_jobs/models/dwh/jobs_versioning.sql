@@ -1,43 +1,37 @@
-CREATE OR REPLACE VIEW JOBS.DWH.JOBS_EVOLUTION AS
+{{ config(
+    materialized = 'view',
+    tags = ['dwh', 'jobs'],
+    alias = 'jobs_versioning'
+) }}
 
 SELECT 
-    JOB_ID,
-    TITLE,
-    COMPANY,
-    CATEGORY,
-    URL,
-    JOB_TYPE,
-    PUBLISHED_AT,
-
-    -- SCD2 Meta
-    META_INSERT_DATE,
-    META_HASH,
-    META_BUSINESS_KEY_HASH,
-    META_IS_DELETED,
+    *,
 
     -- SCD2 Validity
-    META_INSERT_DATE AS META_VALID_FROM,
+    meta_insert_date AS meta_valid_from,
     NVL(
         DATEADD(DAY, -1, 
-            LAG(META_INSERT_DATE) OVER (
-                PARTITION BY META_BUSINESS_KEY_HASH 
-                ORDER BY META_INSERT_DATE DESC
+            LAG(meta_insert_date) OVER (
+                PARTITION BY meta_business_key_hash 
+                ORDER BY meta_insert_date DESC
             )
         ),
         TO_TIMESTAMP('2999-12-31 23:59:59.999')
-    ) AS META_VALID_TO,
+    ) AS meta_valid_to,
 
+    -- Current flag
     DECODE(
         ROW_NUMBER() OVER (
-            PARTITION BY META_BUSINESS_KEY_HASH 
-            ORDER BY META_INSERT_DATE DESC
+            PARTITION BY meta_business_key_hash 
+            ORDER BY meta_insert_date DESC
         ), 
         1, 1, 0
-    ) AS META_IS_CURRENT,
+    ) AS meta_is_current,
 
+    -- Version number
     ROW_NUMBER() OVER (
-        PARTITION BY META_BUSINESS_KEY_HASH 
-        ORDER BY META_INSERT_DATE ASC
-    ) AS META_VERSION
+        PARTITION BY meta_business_key_hash 
+        ORDER BY meta_insert_date ASC
+    ) AS meta_version
 
-FROM JOBS.DWH.JOBS_BASE;
+FROM {{ ref('jobs_base') }}

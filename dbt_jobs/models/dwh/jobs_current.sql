@@ -1,9 +1,13 @@
-CREATE OR REPLACE VIEW JOBS.DWH.JOBS_CURRENT AS
+{{ config(
+    materialized = 'view',
+    tags = ['dwh', 'jobs'],
+    alias = 'jobs_current'
+) }}
 
 SELECT *
-FROM JOBS.DWH.JOBS_BASE
+FROM {{ ref('jobs_base') }}
 QUALIFY ROW_NUMBER() OVER (
-    PARTITION BY META_BUSINESS_KEY_HASH
-    ORDER BY META_INSERT_DATE DESC
+    PARTITION BY meta_business_key_hash
+    ORDER BY meta_insert_date DESC
 ) = 1
-AND META_IS_DELETED = 0;
+AND META_IS_DELETED = 0

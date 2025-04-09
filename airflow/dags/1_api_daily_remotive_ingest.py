@@ -12,23 +12,17 @@ default_args = {
 
 # Run at 09:00 UTC every day
 with DAG(
-    dag_id='load_daily_to_snowflake_2',
+    dag_id='1_api_daily_remotive_ingest',
     default_args=default_args,
     description='Daily job ingest from Remotive API (2-day delay strategy)',
     # schedule_interval='0 15 * * *',
-    schedule_interval='04 13 * * *',
+    schedule_interval='33 12 * * *',
     start_date=datetime(2025, 4, 3),
     catchup=False,
     tags=['remotive', 'jobs', 'api', 'ingest']
 ) as dag:
 
-    # run_script = BashOperator(
-    #     task_id='run_load_daily_to_snowflake_2_script',
-    #     bash_command='python /opt/airflow/dags/../dags/scripts/load_daily_to_snowflake_2.py',
-    # )
-
     run_script = BashOperator(
-        task_id='run_load_daily_to_snowflake_2_script',
-        # bash_command='set -a && source /opt/airflow/.env && python /opt/airflow/dags/scripts/load_daily_to_snowflake_2.py',
-        bash_command='bash -c "set -a && source /opt/airflow/.env && python /opt/airflow/dags/scripts/load_daily_to_snowflake_2.py"'
+        task_id='run_daily_ingest_script',
+        bash_command='python /opt/airflow/dags/../dags/scripts/daily_ingest.py',
     )

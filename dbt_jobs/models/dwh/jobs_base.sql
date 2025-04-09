@@ -7,77 +7,94 @@
     alias = 'jobs_base'
 ) }}
 
-WITH SOURCE_DATA AS (
+-- ✅ Extract raw data from the staging table
+WITH sta_data AS (
 
     SELECT
-        RAW_DATA:"id"::INT              AS JOB_ID,
-        RAW_DATA:"title"::STRING        AS TITLE,
-        RAW_DATA:"company_name"::STRING AS COMPANY,
-        RAW_DATA:"category"::STRING     AS CATEGORY,
-        RAW_DATA:"url"::STRING          AS URL,
-        RAW_DATA:"job_type"::STRING     AS JOB_TYPE,
-        RAW_DATA:"publication_date"::TIMESTAMP AS PUBLISHED_AT,
+        RAW_DATA:"id"::INT                                AS job_id,
+        RAW_DATA:"title"::STRING                          AS title,
+        RAW_DATA:"company_name"::STRING                   AS company,
+        RAW_DATA:"company_logo"::STRING                   AS company_logo,
+        RAW_DATA:"category"::STRING                       AS category,
+        RAW_DATA:"url"::STRING                            AS url,
+        RAW_DATA:"job_type"::STRING                       AS job_type,
+        RAW_DATA:"publication_date"::TIMESTAMP            AS published_at,
+        RAW_DATA:"candidate_required_location"::STRING    AS candidate_location,
+        RAW_DATA:"salary"::STRING                         AS salary,
+        RAW_DATA:"description"::STRING                    AS description,
+        RAW_DATA:"tags"::ARRAY                            AS tags,
 
-        -- SCD2 META
-        CURRENT_TIMESTAMP()             AS META_INSERT_DATE,
+        -- 🔐 SCD2 metadata
+        CURRENT_TIMESTAMP()                               AS meta_insert_date,
         HASH(
-            JOB_ID,
-            TITLE,
-            COMPANY,
-            CATEGORY,
-            URL,
-            JOB_TYPE,
-            PUBLISHED_AT
-        )                               AS META_HASH,
-        HASH(JOB_ID)                    AS META_BUSINESS_KEY_HASH,
-        0                               AS META_IS_DELETED
+            RAW_DATA:"id",
+            RAW_DATA:"title",
+            RAW_DATA:"company_name",
+            RAW_DATA:"category",
+            RAW_DATA:"url",
+            RAW_DATA:"job_type",
+            RAW_DATA:"publication_date",
+            RAW_DATA:"candidate_required_location",
+            RAW_DATA:"salary",
+            RAW_DATA:"description",
+            RAW_DATA:"tags"
+        )                                                 AS meta_hash,
+        HASH(RAW_DATA:"id")                               AS meta_business_key_hash,
+        0                                                 AS meta_is_deleted
 
     FROM JOBS.STA.JOBS_RAW
 
 ),
 
-LATEST_RECORDS AS (
-    SELECT *
-    FROM JOBS.DWH.JOBS_BASE
-),
+-- ✅ Get latest active records from DWH
+dwh_latest_active_only AS (
 
-FILTERED_LATEST AS (
     SELECT *
-    FROM LATEST_RECORDS
+    FROM {{ this }}
     QUALIFY ROW_NUMBER() OVER (
-        PARTITION BY META_BUSINESS_KEY_HASH
-        ORDER BY META_INSERT_DATE DESC
+        PARTITION BY meta_business_key_hash
+        ORDER BY meta_insert_date DESC
     ) = 1
-    AND META_IS_DELETED = 0
+    AND meta_is_deleted = 0
+
 ),
 
-DELETED_RECORDS AS (
+-- ❌ Deleted: no longer present in STA
+deleted_records AS (
+
     SELECT
-        L.*
-    FROM FILTERED_LATEST L
-    LEFT JOIN SOURCE_DATA S
-        ON L.META_BUSINESS_KEY_HASH = S.META_BUSINESS_KEY_HASH
-    WHERE S.META_BUSINESS_KEY_HASH IS NULL
+        d.*
+    FROM dwh_latest_active_only d
+    LEFT JOIN sta_data s
+        ON d.meta_business_key_hash = s.meta_business_key_hash
+    WHERE s.meta_business_key_hash IS NULL
+
 )
 
-SELECT * 
-FROM SOURCE_DATA
-WHERE META_BUSINESS_KEY_HASH NOT IN (
-    SELECT META_BUSINESS_KEY_HASH FROM LATEST_RECORDS
-)
+-- ✅ New or changed rows only
+SELECT s.*
+FROM sta_data s
+LEFT JOIN dwh_latest_active_only d ON s.meta_hash = d.meta_hash
+WHERE d.meta_hash IS NULL
 
 UNION ALL
 
+-- ❌ Deleted records
 SELECT
-    JOB_ID,
-    TITLE,
-    COMPANY,
-    CATEGORY,
-    URL,
-    JOB_TYPE,
-    PUBLISHED_AT,
-    CURRENT_TIMESTAMP()              AS META_INSERT_DATE,
-    META_HASH,
-    META_BUSINESS_KEY_HASH,
-    1                                AS META_IS_DELETED
-FROM DELETED_RECORDS
+    job_id,
+    title,
+    company,
+    company_logo,
+    category,
+    url,
+    job_type,
+    published_at,
+    candidate_location,
+    salary,
+    description,
+    tags,
+    CURRENT_TIMESTAMP()              AS meta_insert_date,
+    meta_hash,
+    meta_business_key_hash,
+    1                                AS meta_is_deleted
+FROM deleted_records
