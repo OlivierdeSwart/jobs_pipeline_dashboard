@@ -26,6 +26,23 @@ Start understanding the general outline of your dataset - postman / Python
 Postman: - Total rows, rows per day, etc
 
 Build a historical dataset - exploratory DA
+
+	Future revision: load full dataset always
+	Ingesting the full dataset daily is better
+	🔁 1. Your DWH (with SCD2 logic) is designed to handle it
+	📈 2. Full ingest avoids edge cases
+	⚡️ 3. Remotive isn’t that massive
+
+		✅ Best Practice (Recommended):
+
+		Name the file/folder after the actual ingestion date (i.e. when you pulled the data), but keep the full dataset unchanged.
+
+		Why?
+			•	✔️ Truth in ingestion: You’re capturing the API as it is now, regardless of when the jobs were published.
+			•	✔️ Simplicity: You don’t have to slice the dataset based on publication_date, which is fuzzy and inconsistent.
+			•	✔️ DWH handles the dedup + changes anyway: Your DBT model (jobs_base) already tracks inserts, deletes, and changes with hashes & SCD2 logic.
+			•	✔️ Future-proof: If you revisit this data in a month and the API format or backfill logic changed, you’ll know exactly when you pulled what.
+
 - Time considerations of the set
 	- the api says it's 24 hours delayed
 	- I'm in 3 april 2025 13:31 Paraguay time (utc-3) and the max timestamp of the dataset is 2025-04-02 08:51:41
@@ -46,6 +63,26 @@ https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index
 Got docker running with Airflow, the DAG running the API script, writing the data both as json and csv to my files
 
 Snowflake python connector
+
+Bonus: How to Describe This in a Resume or Portfolio: “Designed and implemented dimensional models in dbt with SCD Type 2 tracking for historical accuracy. Used star schemas to optimize Tableau dashboards over a Snowflake DWH.” That kind of phrasing hits DE, analytics, modeling, and BI in one go. 💥
+
+
+DBT stuff
+
+github search idea: path:dbt_project.yml schema:"
+
+dbt run --profiles-dir ~/.dbt -m jobs_current
+
+
+
+
+
+
+
+
+
+
+
 
 --------------
 Benchmark ideas:

@@ -23,6 +23,8 @@ with DAG(
 ) as dag:
 
     run_script = BashOperator(
-        task_id='run_daily_ingest_script',
-        bash_command='python /opt/airflow/dags/../dags/scripts/daily_ingest.py',
+        task_id='run_1_api_to_storage_script',
+        bash_command='python /opt/airflow/dags/../dags/scripts/1_api_to_storage.py',
     )
+
+    #1_api_to_storage.py --> 1_api_to_storage.py
