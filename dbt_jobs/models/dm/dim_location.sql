@@ -16,7 +16,7 @@ SOURCE AS (
         HASH(CANDIDATE_LOCATION) AS DIM_LOCATION_KEY,
         CANDIDATE_LOCATION       AS LOCATION_NAME,
         CURRENT_TIMESTAMP()      AS META_INSERT_DATE
-    FROM {{ ref('jobs_current') }}
+    FROM {{ ref('jobs_versioning') }}
     WHERE CANDIDATE_LOCATION IS NOT NULL
 )
 

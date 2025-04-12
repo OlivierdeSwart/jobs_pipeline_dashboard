@@ -18,7 +18,7 @@ SOURCE AS (
         COMPANY                 AS COMPANY_NAME,
         COMPANY_LOGO            AS COMPANY_LOGO,
         CURRENT_TIMESTAMP()     AS META_INSERT_DATE
-    FROM {{ ref('jobs_current') }}
+    FROM {{ ref('jobs_versioning') }}
     WHERE COMPANY IS NOT NULL
 )
 

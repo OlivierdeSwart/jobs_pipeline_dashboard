@@ -7,18 +7,20 @@
     alias = 'jobs_base'
 ) }}
 
+{% set lookback_days = -60 %}
+
 -- ✅ Extract raw data from the staging table
 WITH sta_data AS (
 
     SELECT
         RAW_DATA:"id"::INT                                AS job_id,
         RAW_DATA:"title"::STRING                          AS title,
+        RAW_DATA:"category"::STRING                       AS category,
+        RAW_DATA:"job_type"::STRING                       AS job_type,
+        RAW_DATA:"url"::STRING                            AS url,
         RAW_DATA:"company_name"::STRING                   AS company,
         RAW_DATA:"company_logo"::STRING                   AS company_logo,
-        RAW_DATA:"category"::STRING                       AS category,
-        RAW_DATA:"url"::STRING                            AS url,
-        RAW_DATA:"job_type"::STRING                       AS job_type,
-        RAW_DATA:"publication_date"::TIMESTAMP            AS published_at,
+        RAW_DATA:"publication_date"::TIMESTAMP            AS publication_date, --CHANGE TO KEEP NAME OF SOURCE -- bad name: published_at
         RAW_DATA:"candidate_required_location"::STRING    AS candidate_location,
         RAW_DATA:"salary"::STRING                         AS salary,
         RAW_DATA:"description"::STRING                    AS description,
@@ -43,6 +45,7 @@ WITH sta_data AS (
         0                                                 AS meta_is_deleted
 
     FROM JOBS.STA.JOBS_RAW
+    WHERE DATE(publication_date) >= DATEADD(day, {{ lookback_days }}, CURRENT_DATE())
 
 ),
 
@@ -51,6 +54,7 @@ dwh_latest_active_only AS (
 
     SELECT *
     FROM {{ this }}
+    WHERE DATE(publication_date) >= DATEADD(day, {{ lookback_days }}, CURRENT_DATE())
     QUALIFY ROW_NUMBER() OVER (
         PARTITION BY meta_business_key_hash
         ORDER BY meta_insert_date DESC
@@ -88,7 +92,7 @@ SELECT
     category,
     url,
     job_type,
-    published_at,
+    publication_date,
     candidate_location,
     salary,
     description,
