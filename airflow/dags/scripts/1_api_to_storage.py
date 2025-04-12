@@ -1,32 +1,41 @@
-import os
 import json
-from datetime import datetime
 import requests
+from datetime import datetime
+import boto3
 
 def run_ingest_all():
     url = "https://remotive.com/api/remote-jobs"
     response = requests.get(url)
     jobs = response.json()["jobs"]
 
-    # Folder based on current UTC date
+    # Define S3 bucket and key prefixes
+    s3 = boto3.client("s3")
+    bucket = "olivier-jobs-pipeline-storage"
     today_str = datetime.utcnow().strftime("%Y-%m-%d")
-    folder = f"/opt/airflow/data_storage/remotive_job_api/{today_str}/"
-    os.makedirs(folder, exist_ok=True)
+    prefix = f"raw/remotive_job_api/{today_str}/"
 
-    # Save pretty JSON for debugging
-    json_path = os.path.join(folder, "daily.json")
-    with open(json_path, "w") as f:
-        json.dump(jobs, f, indent=2)
+    # Pretty JSON file (for reference/debugging)
+    pretty_json_key = prefix + "daily.json"
+    s3.put_object(
+        Bucket=bucket,
+        Key=pretty_json_key,
+        Body=json.dumps(jobs, indent=2),
+        ContentType="application/json"
+    )
 
-    # Save NDJSON for Snowflake COPY INTO
-    ndjson_path = os.path.join(folder, "daily.ndjson")
-    with open(ndjson_path, "w") as f:
-        for job in jobs:
-            f.write(json.dumps(job) + "\n")
+    # NDJSON file (for Snowflake ingestion)
+    ndjson_lines = "\n".join(json.dumps(job) for job in jobs)
+    ndjson_key = prefix + "daily.ndjson"
+    s3.put_object(
+        Bucket=bucket,
+        Key=ndjson_key,
+        Body=ndjson_lines,
+        ContentType="application/x-ndjson"
+    )
 
-    print(f"✅ Saved {len(jobs)} jobs to:")
-    print(f"  - JSON: {json_path}")
-    print(f"  - NDJSON: {ndjson_path}")
+    print(f"✅ Uploaded {len(jobs)} jobs to S3:")
+    print(f"  - s3://{bucket}/{pretty_json_key}")
+    print(f"  - s3://{bucket}/{ndjson_key}")
 
 if __name__ == "__main__":
     run_ingest_all()
