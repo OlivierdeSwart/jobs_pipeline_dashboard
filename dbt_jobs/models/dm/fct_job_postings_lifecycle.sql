@@ -22,7 +22,8 @@ WITH SOURCE AS (
                 ELSE DATEDIFF(DAY,publication_date,META_INSERT_DATE)
             END AS JOB_OPEN_DAYS,
         META_IS_DELETED,
-        META_INSERT_DATE
+        META_INSERT_DATE AS META_INSERT_DATE_DWH,
+        CURRENT_TIMESTAMP() AS META_INSERT_DATE_FCT
     FROM {{ ref('jobs_base') }}
     QUALIFY ROW_NUMBER() OVER (
         PARTITION BY meta_business_key_hash
