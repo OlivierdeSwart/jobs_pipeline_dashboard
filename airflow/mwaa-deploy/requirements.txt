@@ -1,0 +1,5 @@
+dbt-core
+dbt-snowflake
+apache-airflow-providers-snowflake
+apache-airflow-providers-amazon
+boto3
