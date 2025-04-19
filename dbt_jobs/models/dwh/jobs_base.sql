@@ -42,7 +42,7 @@ WITH sta_data AS (
             RAW_DATA:"tags"
         )                                                 AS meta_hash,
         HASH(RAW_DATA:"id")                               AS meta_business_key_hash,
-        0                                                 AS meta_is_deleted
+        0::INT                                            AS meta_is_deleted
 
     FROM JOBS.STA.JOBS_RAW
     WHERE DATE(publication_date) >= DATEADD(day, {{ lookback_days }}, CURRENT_DATE())
