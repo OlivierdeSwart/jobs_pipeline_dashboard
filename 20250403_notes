@@ -1,5 +1,7 @@
 20250403_notes
 
+Fully orchestrated, cloud-deployed, auto-updating job intelligence platform with versioned data warehouse and public reporting layer
+
 Blog concept: how to create a developer portfolio project
 
 Think which skill(s) you want to showcase (DE)
@@ -64,6 +66,21 @@ Got docker running with Airflow, the DAG running the API script, writing the dat
 
 Snowflake python connector
 
+🔁 DB Ingest Pattern You Can Follow Universally
+	1.	Research your DB engine
+→ “How does [my database] recommend loading large volumes of data?”
+	2.	Check connector capabilities
+→ For example, psycopg2 for Postgres has .copy_expert() and .execute_values().
+	3.	Leverage optimized tools
+→ Often the vendor provides tools: bcp (SQL Server), mongoimport, gcloud bq load, etc.
+	4.	Avoid row-by-row inserts
+→ Unless your dataset is extremely small or latency-critical (e.g., streaming 1 row/sec).
+	5.	Use temp/intermediate storage if needed
+→ Like stages in Snowflake or staging tables in relational DBs.
+
+If you’re ever switching to a new DB (e.g., “I want to move this pipeline to PostgreSQL”), just hit me with:
+	“How do I optimize bulk inserts in [DB] from a local or API JSON source?”
+
 Bonus: How to Describe This in a Resume or Portfolio: “Designed and implemented dimensional models in dbt with SCD Type 2 tracking for historical accuracy. Used star schemas to optimize Tableau dashboards over a Snowflake DWH.” That kind of phrasing hits DE, analytics, modeling, and BI in one go. 💥
 
 
@@ -72,6 +89,81 @@ DBT stuff
 github search idea: path:dbt_project.yml schema:"
 
 dbt run --profiles-dir ~/.dbt -m jobs_current
+
+dwh done
+
+--==DM==--
+
+	💡 Definition: Business Rule Logic
+
+	A business rule defines or constrains a specific aspect of the business — in data, it’s usually a transformation or filtering condition applied to reflect a real-world rule.
+
+	In your case:
+
+	“Extract salary min, max, average, and bonus presence from a messy string.”
+	That’s business rule logic in action: converting human-language rules into reproducible code.
+
+	⸻
+
+	🧠 What we want now
+
+	From a string like:
+
+	"$95,000 - $110,000 + $5,000 performance-based bonus"
+
+	We want to extract:
+
+	Column Name
+	Value (example)
+	salary_min_usd
+	95000
+	salary_max_usd
+	110000
+	salary_avg_usd
+	102500
+	has_bonus_component
+	TRUE
+
+	🧪 Let’s break down the logic:
+		1.	Find numbers: Use regex to extract all numeric values
+		2.	Take first two numbers: Treat as min and max
+		3.	Average: (min + max) / 2
+		4.	Detect bonus: Look for words like bonus, performance, commission, etc.
+
+
+
+
+
+
+AWS integration
+
+policy name: snowflake_integration_policy
+
+aws s3 sync airflow/mwaa-deploy s3://olivier-mwaa/dags --delete
+
+https://docs.aws.amazon.com/mwaa/latest/userguide/samples-dbt.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,3 +280,88 @@ eu
 
 tenders
 https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EIC-2025-PATHFINDERCHALLENGES-01-02?isExactMatch=true&status=31094501,31094502,31094503&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+
+------------
+
+stack actuality:
+
+Great question — let’s break down the adoption and popularity of the three pillars in your stack (Snowflake, Airflow, Tableau) compared to alternatives over the past 10 years, based on industry trends, surveys, usage reports, job postings, and market share insights.
+
+⸻
+
+🧊 1. Snowflake vs Other Databases
+
+Snowflake Popularity & Growth
+	•	Launch Year: 2014, became widely adopted around 2018+.
+	•	Market Position: One of the fastest-growing cloud data platforms ever.
+	•	Gartner Magic Quadrant (2020–2024): Leader in cloud data warehousing.
+	•	Key Advantages: Separation of storage/compute, performance scaling, SQL-native, built-in security, SaaS model.
+
+Market Share Estimate (as of 2024):
+
+Database	Approx. Usage Share in DE Projects
+Snowflake	~20–30% and rapidly growing
+BigQuery (GCP)	~15%
+Redshift (AWS)	~10%
+Azure Synapse	~10%
+PostgreSQL / MySQL	~20–25% (mostly for app + DE blend)
+Databricks (Delta)	~10% (esp. ML/streaming heavy)
+
+✅ Conclusion: Snowflake is top-tier, especially in modern, cloud-native stacks. Its market share among new data projects is strong and growing.
+
+⸻
+
+⚙️ 2. Airflow vs Other Orchestration Tools
+
+Airflow
+	•	Initial Release: 2015 by Airbnb, now part of the Apache Foundation.
+	•	Strengths: Python-native, highly customizable, strong open-source community.
+	•	Used by: Airbnb, Stripe, Lyft, Slack, many modern data teams.
+
+Alternatives & Niche Tools:
+
+Tool	Popularity Notes
+Airflow	~60% usage share; industry standard.
+Luigi	Pre-Airflow, now outdated.
+Prefect	Modern, better UX, catching on (~10–15%)
+Dagster	Declarative + type-safe, also rising (~5–10%)
+dbt Cloud jobs	Simpler scheduling use case only
+Managed Airflow	On GCP, AWS MWAA, Astronomer Cloud
+
+✅ Conclusion: Airflow dominates orchestration for serious DE projects. Some orgs use managed Airflow or switch to Prefect/Dagster for friendlier DX, but Airflow remains the gold standard.
+
+⸻
+
+📊 3. Tableau vs Other BI Tools
+
+Tableau
+	•	Founded: 2003, acquired by Salesforce in 2019.
+	•	Pros: Intuitive interface, great for dashboards, strong community.
+	•	Cons: Desktop-heavy, weaker on semantic layers vs competitors.
+
+Market Share Comparison (2023–2024)
+
+Tool	Approx. Market Share
+Power BI	~35%
+Tableau	~25%
+Looker	~10–15%
+Metabase	~5% (open source)
+Mode	~5%
+Superset	~3–5%
+
+✅ Conclusion: Tableau is still a top 2 BI tool, especially in enterprises and data teams with analysts. It remains one of the most commonly listed tools in job postings.
+
+⸻
+
+💼 Summary: Your Stack
+
+Component	Tool	Status
+DB/warehouse	Snowflake	🚀 Industry-leading cloud DWH
+Orchestration	Airflow	🏆 Standard for pipelines
+BI/Viz	Tableau	🥈 Top 2 enterprise BI tool
+
+✅ Your stack is mainstream, widely adopted, and highly employable. It represents a modern cloud-native data platform that many companies are moving toward — especially in mid-size to enterprise settings.
+
+Want me to help you visualize this comparison or turn it into a blog post or slide?
+
+---------
