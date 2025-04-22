@@ -20,7 +20,7 @@ WITH sta_data AS (
         RAW_DATA:"url"::STRING                            AS url,
         RAW_DATA:"company_name"::STRING                   AS company,
         RAW_DATA:"company_logo"::STRING                   AS company_logo,
-        RAW_DATA:"publication_date"::TIMESTAMP            AS publication_date, --CHANGE TO KEEP NAME OF SOURCE -- bad name: published_at
+        RAW_DATA:"publication_date"::TIMESTAMP            AS publication_date,
         RAW_DATA:"candidate_required_location"::STRING    AS candidate_location,
         RAW_DATA:"salary"::STRING                         AS salary,
         RAW_DATA:"description"::STRING                    AS description,
