@@ -1,6 +1,6 @@
 {{ config(
     materialized = 'table',
-    alias = 'fct_job_postings_active',
+    alias = 'fct_job_postings',
     tags = ['dm', 'jobs', 'fact']
 ) }}
 
